@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+  background: #001E36;
+}
+
+.container {
+	max-width: 1230px !important;
+}
+
+.photoshop_wrapper {
+	padding: 80px 0;
+}
+
+.photoshop_wrapper h2 {
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.photoshop_wrapper h2 span {
+		color: #31A8FF;
+}
+
+.photoshop_wrapper .photoshop_item {
+    background: #cdcdcd;
+    text-align: center;
+    padding: 40px 20px 80px 20px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.photoshop_wrapper .photoshop_item:hover::before {
+	  top: -40%;
+}
+
+.photoshop_wrapper .photoshop_item::before {
+    content: "";
+    position: absolute;
+    top: -145%;
+    left: 50%;
+    width: 100%;
+    height: 300px;
+    background: #31A8FF;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s all ease-in-out;
+    z-index: 1;
+}
+
+.photoshop_wrapper .photoshop_item figure {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto !important;
+    position: relative;
+    z-index: 11;
+}
+
+.photoshop_wrapper .photoshop_item:hover figure img {
+	  transform: scale(1.10);
+}
+
+.photoshop_wrapper .photoshop_item figure img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  transition: 0.4s all ease-in-out;
+}
+
+.photoshop_wrapper .photoshop_item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+}
+
+.photoshop_wrapper .photoshop_item p {
+    color: #31A8FF;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.photoshop_wrapper .photoshop_item:hover ul {
+	  transform: translateY(0px);
+}
+
+.photoshop_wrapper .photoshop_item ul {
+    list-style: none;
+    background: #31A8FF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    transform: translateY(44px);
+    transition: 0.4s all ease-in-out;
+}
+
+.photoshop_wrapper .photoshop_item ul li {
+	  display: inline-block;
+}
+
+.photoshop_wrapper .photoshop_item ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 8px;
+    display: inline-block;
+    transition: 0.4s all ease-in-out;
+    width: 40px;
+}
+
+.photoshop_wrapper .photoshop_item ul li a:hover {
+	  background: #000000;
+}
